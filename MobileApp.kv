@@ -1,0 +1,146 @@
+
+BoxLayout:
+
+	orientation: 'vertical'
+
+	MDToolbar:
+		title:'App Name'
+		md_bg_color: (31/255, 31/255, 31/255, 1)
+		specific_text_color: (240/255, 140/255, 9/255, 1)
+		elevation:10
+		right_action_items:[['run', lambda x:x]]
+	
+	MDBottomNavigation:
+		#Color
+		panel_color: (31/255, 31/255, 31/255, 1)
+
+		#Main Page HOME
+		MDBottomNavigationItem:
+			name: 'Home'
+			text:'Home'
+			icon: 'home'
+			
+			FloatLayout:
+				canvas.before:
+					Rectangle:
+						size: self.size
+						pos: self.pos
+						source: 'img/back.jpg'
+				size: root.width, root.height
+	
+
+				MDLabel:
+					text:'AI-Trainer'
+					pos_hint: {'y':.2}
+					halign: 'center'
+					font_style: 'H3'
+					italic: True
+					color: (1, 1, 1, 1)
+					#outline_color: (0,0,0)
+					#outline_width: 2
+
+				MDLabel:
+					text:'Made by Sven Skyth Henriksen'
+					pos_hint: {'y':-0.45}
+					halign: 'center'
+					font_style: 'Overline'
+					color: (1, 1, 1, 1)
+					#outline_color: (0,0,0)
+					#outline_width: 2
+				
+
+		# Second Page where all the exersices gonna be 
+		MDBottomNavigationItem:
+			name: 'Dashboard'
+			text:'Dashboard'
+			icon: 'table'
+
+			FloatLayout:
+				canvas.before:
+					Rectangle:
+						size: self.size
+						pos: self.pos
+						source: 'img/back.jpg'
+				size: root.width, root.height
+
+				MDLabel:
+					text:'Welcome to your mobile'
+					pos_hint: {'y':.4}
+					halign: 'center'
+					font_style: 'H6'
+					italic: True
+					color: (1, 1, 1, 1)
+					outline_color: (0,0,0)
+					outline_width: 2
+				MDLabel:
+					text:'Personal Trainer!'
+					pos_hint: {'y':.35}
+					halign: 'center'
+					font_style: 'H6'
+					italic: True
+					color: (1, 1, 1, 1)
+					outline_color: (0,0,0)
+					outline_width: 2
+				
+				MDLabel:
+					text:'Please select an Exercise:'
+					pos_hint: {'y':.25}
+					halign: 'center'
+					font_style: 'Body2'
+					italic: False
+					color: (240/255, 140/255, 9/255, 1)
+					#outline_color: (0,0,0)
+					#outline_width: 2
+				
+				MDFillRoundFlatButton:
+					text:'Biceps Curls'
+					pos_hint: {'x':.33, 'y':.55}
+					on_press: print('Biceps')
+				
+					#halign: 'center'
+
+				MDFillRoundFlatButton:
+					text:'Shoulder Press'
+					pos_hint: {'x':.3, 'y':.40}
+					on_press: app.load_shoulder_press()
+					
+
+					
+					#halign: 'center'
+
+				MDFillRoundFlatButton:
+					text:'Squats'
+					pos_hint: {'x':.38, 'y':.25}
+					on_press: print('Not Working yet.')
+					
+					
+					#halign: 'center'
+
+
+				MDFillRoundFlatButton:
+					text:'Triceps Curls'
+					pos_hint: {'x':.33, 'y':.1}
+					on_press: print('Not Working yet.')
+					
+					#halign: 'center'
+					
+				
+				
+
+
+
+
+		#Explaination what the App is about
+		MDBottomNavigationItem:
+			name: 'About'
+			text:'About'
+			icon: 'clipboard-text'
+
+
+			FloatLayout:
+				canvas.before:
+					Rectangle:
+						size: self.size
+						pos: self.pos
+						source: 'img/back.jpg'
+				size: root.width, root.height
