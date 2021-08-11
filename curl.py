@@ -51,15 +51,16 @@ with mp_pose.Pose(min_detection_confidence=0.6, min_tracking_confidence=0.6) as 
             landmarks = results.pose_landmarks.landmark
             
             # Get coordinats
-            left_hip = [landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].x,landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].y]
             left_shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x,landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y]
             left_elbow = [landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].x,landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].y]
+            left_wrist = [landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].x,landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].y]
 
             # Calc Angle
-            angle = calcAngle(left_hip,left_shoulder,left_elbow)
+            angle = calcAngle(left_shoulder,left_elbow,left_wrist)
+
             #Progress bar
-            bar = np.interp(angle, (80, 150), (600, 200))
-            cv2.rectangle(image,(1100, 200),(1175,600),(7,85,175), 3)
+            bar = np.interp(angle, (30, 160), (160, 600))
+            cv2.rectangle(image,(1100, 160),(1175,600),(7,85,175), 3)
             cv2.rectangle(image,(1100,int(bar)),(1175, 600),(7,85,175), cv2.FILLED)
 
 
@@ -69,14 +70,13 @@ with mp_pose.Pose(min_detection_confidence=0.6, min_tracking_confidence=0.6) as 
             #            ,cv2.FONT_HERSHEY_PLAIN, 5,(255,255,255), 2, cv2.LINE_AA
             #            )
             
-            #Shoulder Press Counter Logic
-            if angle > 150:
+            #Curl Counter Logic
+            if angle > 160:
                 stage = 'down'
-            if angle < 80 and stage == 'down':
+            if angle < 30 and stage == 'down':
                 stage='up'
                 counter +=1
                 #print(counter)
-
 
 
         except:
@@ -105,7 +105,7 @@ with mp_pose.Pose(min_detection_confidence=0.6, min_tracking_confidence=0.6) as 
         cv2.putText(image, 'Made by', (75,680), cv2.FONT_HERSHEY_PLAIN, 1, (255,255,255), 1, cv2.LINE_AA)
         cv2.putText(image, 'Sven Skyth Henriksen', (20,700), cv2.FONT_HERSHEY_PLAIN, 1, (255,255,255), 1, cv2.LINE_AA)
         cv2.putText(image, 'Exercise: ', (1050,30), cv2.FONT_HERSHEY_PLAIN, 2, (255,255,255), 2, cv2.LINE_AA)
-        cv2.putText(image, 'Shoulder Press ', (1010,100), cv2.FONT_HERSHEY_PLAIN, 2, (255,255,255), 2, cv2.LINE_AA)
+        cv2.putText(image, 'Biceps Curls', (1030,100), cv2.FONT_HERSHEY_PLAIN, 2, (255,255,255), 2, cv2.LINE_AA)
 
 
         #Render Detections --> Showing landmarks and dots

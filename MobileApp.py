@@ -17,6 +17,8 @@ class FitnessApp(MDApp):
 	def load_shoulder_press(self):
 		os.system('python shoulder_press.py')
 		
+	def load_curl(self):
+		os.system('python curl.py')
 	
 	
 
