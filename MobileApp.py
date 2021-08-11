@@ -8,6 +8,7 @@ Window.size = (300,500)
 
 
 
+
 class FitnessApp(MDApp):
 	def build(self):
 		self.theme_cls.theme_style='Light'
@@ -19,6 +20,9 @@ class FitnessApp(MDApp):
 		
 	def load_curl(self):
 		os.system('python curl.py')
+
+	def load_triceps(self):
+		os.system('python triceps.py')
 	
 	
 
