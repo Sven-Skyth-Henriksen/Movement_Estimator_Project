@@ -1,5 +1,10 @@
 # Fitness App
 
+<p align="center">
+  <img src="https://wallpaperaccess.com/full/4661040.jpg" width="350" title="hover text">
+  
+</p>
+
 > Building a fitness app to help people with doing the exercises correctly.
 
 
