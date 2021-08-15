@@ -1,7 +1,7 @@
 # Fitness App
 
 <p align="center">
-  <img src="https://wallpaperaccess.com/full/4661040.jpg" width="350" title="hover text">
+  <img src="https://wallpaperaccess.com/full/4661040.jpg" title="hover text">
   
 </p>
 
