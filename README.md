@@ -22,10 +22,10 @@
 ## General Information ℹ️
 
 - <em>What problem does it solve?</em>
-- Myself I love going to the gym so I was think about creating an app that can help people who doesn't how the exercises are working.
+- I love going to the gym so I was think about creating an app that can help people who doesn't know how the exercises are working.
 
 - <em>What is the purpose of your project?</em>
-- A tool for personal trainers so they can work together with several the clients at the ssame time.
+- A tool for personal trainers so they can work with several the clients at the ssame time.
 
 
 ## Technologies Used 🛠
