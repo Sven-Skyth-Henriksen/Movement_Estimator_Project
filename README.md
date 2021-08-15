@@ -1,6 +1,6 @@
 # Fitness App
 
-> Building a Website for a Charity called Mammejongen
+> Building a fitness app to help people with doing the exercises correctly.
 
 
 ## Table of Contents 📁
@@ -17,25 +17,16 @@
 ## General Information ℹ️
 
 - <em>What problem does it solve?</em>
-- I noticed that they dont have a Website yet so I tried to create one for free.
+- Myself I love going to the gym so I was think about creating an app that can help people who doesn't how the exercises are working.
 
 - <em>What is the purpose of your project?</em>
-- Doing something for a good cause and to improve Web Development skils.
+- A tool for personal trainers so they can work together with several the clients at the ssame time.
 
 
 ## Technologies Used 🛠
 
 - Python - version 3.8 or higher
-- Flask - version 1.1.2
-- Flask_Login - version 0.5.0
-- itsdangerous - version 2.0.1
-- datetime - version 4.0.1
-- flask-sqlalchemy - version 2.5.1
-- flask-bcrypt - version 0.7.1 
-- flask-mail - version 0.9.1
-- flask-wtf - version 0.15.1
-- wtforms - version 2.3.3
-- pillow - version 8.3.1
+- 
 
 
 
