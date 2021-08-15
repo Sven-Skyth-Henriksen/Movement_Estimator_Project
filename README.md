@@ -26,17 +26,21 @@
 ## Technologies Used 🛠
 
 - Python - version 3.8 or higher
-- 
+- Mediapipe - version 0.8.6.2
+- Numpy - version 1.21.1
+- Opencv-python - version 4.5.3.56
+- Times - version 0.7
+- Kivy - version 2.0.0
+- KivyMD - version 1.0.0
 
 
 
 ## Features 🗄
 
 <em>Ready features here:</em>
-- Login/Logout
-- Create an Account
-- Create a Post
-- Update and Delete a Post
+- Movement tracking
+- Counting reps
+- Working App 
 
 
 
@@ -49,12 +53,12 @@ Project is: _in progress_
 
 Room for improvement:
 - Userinterface
-- Being able to comment on posts
+- Creating an account
 - ...
 
 To do:
-- A page for Events
-- An admin-page
+- Add more exercises
+- Add a music player
 - ...
 
 
