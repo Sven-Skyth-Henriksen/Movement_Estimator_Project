@@ -32,7 +32,7 @@
 
 - Python - version 3.8 or higher
 - Mediapipe - version 0.8.6.2
-- Numpy - version 1.21.1
+- NumPy - version 1.21.1
 - Opencv-python - version 4.5.3.56
 - Times - version 0.7
 - Kivy - version 2.0.0
