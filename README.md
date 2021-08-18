@@ -1,4 +1,4 @@
-# Fitness App
+# MyFitnessCoach
 
 <p align="center">
   <img src="https://wallpaperaccess.com/full/4661040.jpg" width=750' title="hover text">
