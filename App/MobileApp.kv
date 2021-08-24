@@ -4,7 +4,7 @@ BoxLayout:
 	orientation: 'vertical'
 
 	MDToolbar:
-		title:'App Name'
+		title:'MyFitnessCoach'
 		md_bg_color: (31/255, 31/255, 31/255, 1)
 		specific_text_color: (240/255, 140/255, 9/255, 1)
 		elevation:10
@@ -144,3 +144,23 @@ BoxLayout:
 						pos: self.pos
 						source: 'img/back.jpg'
 				size: root.width, root.height
+
+				MDLabel:
+					text:'About'
+					pos_hint: {'y':.4}
+					halign: 'center'
+					font_style: 'H6'
+					italic: True
+					color: (1, 1, 1, 1)
+					outline_color: (0,0,0)
+					outline_width: 2
+
+				MDLabel:
+					text:'I called this fitness project "MyFitnessCoach" and I have build it to explain people how some exercises are working and also it could be a good tool for personal trainers for having several clients at the same moment. This project can be deployed as a MOBILE or a WEB application. I hope you will enjoy it!'
+					pos_hint: {'y':.1}
+					halign: 'center'
+					font_style: 'Body2'
+					italic: False
+					color: (225/255, 255/255, 255/255, 1)
+					#outline_color: (0,0,0)
+					#outline_width: 
