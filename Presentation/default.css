@@ -373,6 +373,12 @@ h6{ font-size: 16px;}
 	border:none;
 }
 
+.thanks-wrapper{
+	display: grid;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
 
 @media screen and (max-width: 1200px){ 
 	.main-container{
