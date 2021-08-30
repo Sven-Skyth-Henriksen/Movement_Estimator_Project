@@ -65,10 +65,10 @@ with mp_pose.Pose(min_detection_confidence=0.6, min_tracking_confidence=0.6) as 
 
 
             # Visualization angle
-            #cv2.putText(image, str(int(angle)), 
-            #            tuple(np.multiply(left_shoulder, [640,480]).astype(int))
-            #            ,cv2.FONT_HERSHEY_PLAIN, 5,(255,255,255), 2, cv2.LINE_AA
-            #            )
+            cv2.putText(image, str(int(angle)), 
+                        tuple(np.multiply(left_shoulder, [640,480]).astype(int))
+                        ,cv2.FONT_HERSHEY_PLAIN, 5,(255,255,255), 2, cv2.LINE_AA
+                        ) 
             
             #Curl Counter Logic
             if angle > 160:
@@ -109,10 +109,11 @@ with mp_pose.Pose(min_detection_confidence=0.6, min_tracking_confidence=0.6) as 
 
 
         #Render Detections --> Showing landmarks and dots
-        #mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS, 
-        #                        mp_drawing.DrawingSpec(color=(245,117,66), thickness=2, circle_radius=2), #Giving the DOTS another color
-        #                        mp_drawing.DrawingSpec(color=(245,66,230), thickness=2, circle_radius=2)  #Giving the LINES another color 
-        #                        )
+        mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS, 
+                                mp_drawing.DrawingSpec(color=(245,117,66), thickness=2, circle_radius=2), #Giving the DOTS another color
+                                mp_drawing.DrawingSpec(color=(245,66,230), thickness=2, circle_radius=2)  #Giving the LINES another color 
+                                )
+
 
         cv2.imshow('Mediapipe Feed', image)
         
