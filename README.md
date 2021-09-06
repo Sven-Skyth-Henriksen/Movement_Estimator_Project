@@ -5,10 +5,10 @@
   
 </p>
                                                                     
-<p align="center">
-  <img src="https://wallpaperaccess.com/full/4661040.jpg" width=750' title="hover text">
-  
-</p>                                                                  
+<video controls align="center" class='video' style='margin-left: auto; margin-right:auto; display:block; margin-bottom: 30px; width:600px;' poster='Presentation/images/thumbnail.jpeg'>
+							<source src="Presentation/images/Capstone.mp4" type="video/mp4">
+</video>
+                                                                 
 
 > Building a fitness app to help people with doing the exercises correctly.
 
